@@ -1,6 +1,6 @@
 {-# LANGUAGE GADTs #-}
 
-module Acc where
+module Gadt where
 
 data NonEmpty
 data Empty    
@@ -13,7 +13,6 @@ data List emptiness a where
 reverseAccEW xs = go xs Nil where
     go Nil acc = acc
     go (x ::: xs) acc = go xs (x ::: acc)-}
-
 
 
 reverseAccE :: List e a -> List e a

@@ -25,7 +25,10 @@ source-repository head
 
 library
   exposed-modules:
+      Gadt
       Lib
+      TypePromotion
+      TypePromotionTwo
   other-modules:
       Paths_haskell_for_newbies
   hs-source-dirs:
@@ -37,7 +40,6 @@ library
 executable haskell-for-newbies-exe
   main-is: Main.hs
   other-modules:
-      Acc
       Paths_haskell_for_newbies
   hs-source-dirs:
       app
