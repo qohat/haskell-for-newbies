@@ -1,4 +1,5 @@
 {-# LANGUAGE GADTs, DataKinds, PolyKinds #-}
+{-# LANGUAGE TypeOperators #-}
 
 module TypePromotionTwo where
 
