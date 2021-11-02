@@ -27,6 +27,7 @@ library
   exposed-modules:
       Gadt
       Lib
+      TypeFamilies
       TypePromotion
       TypePromotionTwo
   other-modules:
