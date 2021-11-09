@@ -1,7 +1,7 @@
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE StandaloneKindSignatures #-}
-module TypeFamily where
+module TypeFamilies where
 
 import TypePromotion
 
