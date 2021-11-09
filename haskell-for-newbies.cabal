@@ -31,6 +31,7 @@ library
       TypeFamilies
       TypePromotion
       TypePromotionTwo
+      Types
   other-modules:
       Paths_haskell_for_newbies
   hs-source-dirs:

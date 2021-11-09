@@ -53,3 +53,9 @@ init1 ls = reverse (tail (reverse ls))
 init2 :: [a] -> [a]
 init2 ls = take (length ls - 1) ls
 
+head1 :: [a] -> a
+head1 (x:_) = x
+
+tail1 :: [a] -> [a]
+tail1 [] = []
+tail1 (_:xs) = xs
