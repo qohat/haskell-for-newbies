@@ -60,8 +60,31 @@ tail1 :: [a] -> [a]
 tail1 [] = []
 tail1 (_:xs) = xs
 
+--List comperhensions 
+
+-- We can represent a math set {x2 | x E {1..5}}
+squares1to5 :: [Integer]
+squares1to5 = [x^2 | x <- [1..5]]
+
 concat1 :: [[a]] -> [a]
 concat1 xss = [x | xs <- xss, x <- xs]
 
 myList :: [Integer]
 myList = [x | x <- [1..10], even x]
+
+factors :: Int -> [Int]
+factors n = [x | x <- [1..n], n `mod` x == 0]
+
+prime :: Int -> Bool 
+prime n = factors n == [1,n]
+
+primes :: Int -> [Int]
+primes n = [x | x <- [2..n], prime x]
+
+--pyths :: Int -> [(Int, Int, Int)]
+
+perfect :: Int -> Bool 
+perfect n = sum (init (factors n)) == n
+
+perfects :: Int -> [Int]
+perfects n = [x | x <- [1..n], perfect x]
