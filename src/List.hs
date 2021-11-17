@@ -59,3 +59,9 @@ head1 (x:_) = x
 tail1 :: [a] -> [a]
 tail1 [] = []
 tail1 (_:xs) = xs
+
+concat1 :: [[a]] -> [a]
+concat1 xss = [x | xs <- xss, x <- xs]
+
+myList :: [Integer]
+myList = [x | x <- [1..10], even x]
