@@ -19,3 +19,7 @@ odds n = map f [1..n]
 
 oddsSymplified n = map (\x -> x * 2 + 1) [1..n]
 
+
+{- Type and classes -}
+data Tree a = Leaf a | Node (Tree a) (Tree a)
+
