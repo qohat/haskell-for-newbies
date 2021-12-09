@@ -25,6 +25,7 @@ source-repository head
 
 library
   exposed-modules:
+      Continuations
       Gadt
       Lib
       List
@@ -38,6 +39,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , mtl
   default-language: Haskell2010
 
 executable haskell-for-newbies-exe
@@ -50,6 +52,7 @@ executable haskell-for-newbies-exe
   build-depends:
       base >=4.7 && <5
     , haskell-for-newbies
+    , mtl
   default-language: Haskell2010
 
 test-suite haskell-for-newbies-test
@@ -63,4 +66,5 @@ test-suite haskell-for-newbies-test
   build-depends:
       base >=4.7 && <5
     , haskell-for-newbies
+    , mtl
   default-language: Haskell2010
